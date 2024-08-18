@@ -32,7 +32,7 @@ In the summary tab, we can view the numerical and categorical data points. The c
 ![dataset-summary-tab](../assets/dataset-summary-tab.png)
 	
 ### 3. Transforming incorrectly tagged columns
-
+#### Part 1 - Transforming the year
 - *Step 1:* Identify the column in the data summary pane.
 	![transform-step-1](../assets/transform-step-1.png)
 
@@ -47,6 +47,12 @@ In the summary tab, we can view the numerical and categorical data points. The c
 
 - *Step 5:* View and verify updated changes in the `Manage` tab.
 	![transform-step-5](../assets/transform-step-5.png)
+
+#### Part 2 - Correcting the factors/categorical variables
+- notice based on the above that there is a separate block for character variables
+- we can use `Transform` tab and play with `Transformation type` and `variable type` to ensure that our columns are properly understood by radiant (of categorical values)
+![transform-change-type-docs](../assets/transform-change-type-docs.png)
+![transform-change-type-done](../assets/transform-change-type-done.png)
 
 ### 4. Creating a new column in the dataset
 - Use the `transform` tab as per usual.
