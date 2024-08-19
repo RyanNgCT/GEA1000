@@ -138,6 +138,61 @@ $$
 
 ---
 ## C. Study Designs
+- in study design, we focus on Research Questions that examine a r/s btwn two variables
+
+Exemplar Question: Does **drinking coffee** help students to **pass the maths exam**?
+- Dependent: passing the maths exam
+- Independent: drinking coffee 
+
+Steps:
+1. Take a census or sample of the target population (i.e. students who drink coffee and students who don't drink coffee)
+2. Conduct the study
+	1. Experimental
+	2. Observational
+
+### 1. Experimental Studies
+*def:* intentionally manipulates one variable in an attempt to cause an effect on another variable
+- can be also termed "controlled experiment"
+
+goal: provide a cause-effect relationship btwn the two variables
+- researcher may hypothesize the relationship using the independent and dependent variables
+
+**Groups within the experiment**
+(a) Treatment Group
+- Coffee group $\implies$ drinks exactly one cup of coffee every day, for a month
+	- the "treatment" in this case is coffee
+
+(b) Control Group
+- No Coffee group $\implies$ not drink **any coffee** (at all) for a month
+- Control is needed because it provides a baseline for comparison w the Treatment group
+	- control group might be the same or even outperform the treatment group (in the exam) in this case
+- in some cases, might receive some "baseline" treatment elements (**placebo**) to **reduce bias**
+	- since bias is an effect of "leaving the control group alone"
+	- provided with a substitute to what the treatment group has been provided
+
+> *Definitions*
+> 1.  Placebo: Treatment with no active ingredients and no effects
+> 2.  Placebo effect: response observe when subject receive placebo treatment but still show some positive effects.
+
+**Random Assignment**
+- required because there may be other dependent variables affecting the results of the independent variable
+	- the coffee-exam r/s case $\implies$ other factors like revision time (shorter vs longer), IQ of subjects, age of subjects etc. etc.
+	
+- helps to remove the effects of other dependent variables to make the treatment and control group largely similar in terms of other factors/variables
+
+- impartial procedure using chance
+	- each piece of paper has an equal chance of being picked out (random draw without replacement)
+	- Steps:
+		1. randomly draw subjects until about half ($\approx 50\%$) of the subjects have been "removed" or grouped into the treatment group
+		2. the other half of the main group form the control group
+
+	- helps to create similar treatment & control groups in terms of other factors (i.e. revision time, IQ, age etc.)
+
+- treatment and control groups can have different sizes but as long as groups are quite large
 
 
+**"Random" connotations**
+- actual meaning: has a strict meaning related to an **impartial chance** mechanism
+- connotation / association: often interchangeable with "haphazard" -> researcher must ensure other experimental variables are not the case
 
+### 2. Observational Studies
