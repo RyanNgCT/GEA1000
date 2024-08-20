@@ -61,7 +61,7 @@
 	- **Estimate**: inference based on information from the sample (thru data collection and analysis methods) / "empirical fact"
 	
 - **Sampling Frame**: source of the sample
-	- hope that there is an overlap btwn target population and sampling frame -> ideally for it to be *exactly equal* or "generalize-able" (i.e. `sampling frame ≥ target population`)
+	- hope that there is an overlap btwn target population and sampling frame -> ideally for it to be *exactly equal* or "generalisable" (i.e. `sampling frame ≥ target population`)
 	- problems with sampling frame
 		- insufficient coverage: outliers and edge cases (proportion should match and have no form of underrepresentation of members within the population)
 		- there might be redundant data in the sample

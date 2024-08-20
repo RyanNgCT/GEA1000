@@ -151,7 +151,7 @@ Steps:
 	2. Observational
 
 ### 1. Experimental Studies
-*def:* intentionally manipulates one variable in an attempt to cause an effect on another variable
+> *def:* intentionally manipulates one variable in an attempt to cause an effect on another variable
 - can be also termed "controlled experiment"
 
 goal: provide a cause-effect relationship btwn the two variables
@@ -159,7 +159,7 @@ goal: provide a cause-effect relationship btwn the two variables
 
 **Groups within the experiment**
 (a) Treatment Group
-- Coffee group $\implies$ drinks exactly one cup of coffee every day, for a month
+- Coffee group $\implies$ drinks exactly one cup of coffee every day, for a month (should also make sure that it is around the same time)
 	- the "treatment" in this case is coffee
 
 (b) Control Group
@@ -170,9 +170,7 @@ goal: provide a cause-effect relationship btwn the two variables
 	- since bias is an effect of "leaving the control group alone"
 	- provided with a substitute to what the treatment group has been provided
 
-> *Definitions*
-> 1.  Placebo: Treatment with no active ingredients and no effects
-> 2.  Placebo effect: response observe when subject receive placebo treatment but still show some positive effects.
+- both groups will then take the maths exam (provide experimental results for benchmarking )
 
 **Random Assignment**
 - required because there may be other dependent variables affecting the results of the independent variable
@@ -180,19 +178,69 @@ goal: provide a cause-effect relationship btwn the two variables
 	
 - helps to remove the effects of other dependent variables to make the treatment and control group largely similar in terms of other factors/variables
 
-- impartial procedure using chance
-	- each piece of paper has an equal chance of being picked out (random draw without replacement)
+- is an *impartial* procedure using ***chance***
+	- each piece of paper has an equal chance of being picked out (==random draw *without replacement*==)
 	- Steps:
 		1. randomly draw subjects until about half ($\approx 50\%$) of the subjects have been "removed" or grouped into the treatment group
 		2. the other half of the main group form the control group
 
-	- helps to create similar treatment & control groups in terms of other factors (i.e. revision time, IQ, age etc.)
+	- helps to create similar treatment & control groups in terms of other factors (i.e. revision time, IQ, age etc.) $\implies$ allows for similar distributions
 
 - treatment and control groups can have different sizes but as long as groups are quite large
-
 
 **"Random" connotations**
 - actual meaning: has a strict meaning related to an **impartial chance** mechanism
 - connotation / association: often interchangeable with "haphazard" -> researcher must ensure other experimental variables are not the case
 
+**Placebo**
+> *Definitions*
+> 1.  Placebo: Treatment with no active ingredients and no effects
+> 2.  Placebo effect: response observe when subject receive placebo treatment but **still show some positive effects.**, even if the treatment has no effect
+
+**Blinding**
+- somewhat like blindfolding the subjects
+- blinded subjects don't know which group they belong to (treatment or control)
+	- can add a placebo ("substitute for the treatment" taken by the control group) to help make the blinding more effective
+	- helps to prevent subject's own beliefs and in turn behaviours from affecting the results of the experiment(al study)
+
+- Returning to coffee-and-substitute example
+	- Each subject won't know if they're in the treatment or control group -> are blind to how the test or control might look like (treatment and placebo should smell and taste the same)
+	- Each subject is provided with a drink every morning
+
+- assessors marking the test also need to be blinded to avoid biases (being more lenient to one group compared to the other)
+
+> *def:* Double-blinding experiment occurs when both the subjects and assessors (of the experiment) are blinded.
+
 ### 2. Observational Studies
+> *def*: Observational study involves observing individuals and measures variables of interest
+
+- helps to eliminate ethical issues associated with the experiment (i.e. ethical to inject low doses of virus consent provided?)
+	- just record data based on real-world cases (don't force or incentivize participation)
+- researcher **does NOT attempt** to **directly** manipulate one variable to cause an effect on another variable.
+
+$\therefore$  observational studies do not provide convincing evidence supporting a cause-effect relationship.
+
+**Groups within the experiment**
+- Will still  use the terms treatment group (i.e. smokers) and control group (non-smokers) even though no actual "treatment" is applied from the researcher's end.
+
+	Treatment group $\Longleftrightarrow$ exposure;  Control Group $\Longleftrightarrow$ non-exposure
+
+
+### 3. Experimental vs Observational Studies
+
+| **Experimental Studies**                                                                                  | **Observational Studies**                                                                       |
+|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| Assigned by researcher (should have only one independent variable -> random assignment + double-blinding) | Decided by subjects themselves (usually lifestyle choices)                                      |
+| Can provide cause-and-effect relationship                                                                 | Cannot provide cause-and-effect relationship (can only corroborate and expand on other studies) |
+|                                                                                                           | Can still provide evidence on association                                                       |
+
+---
+## D. Generalisability of Studies 
+
+Even if an experiment is:
+- well-designed
+- no ethical issues
+- has double-blinding and random assignment,
+
+We still might not be generalize the results to the entire population / everyone (recall generalisability has [3 other criteria](../Week%201/Week%201%20Video%20Lecture%20Notes.md###%207.%20Generalisability) and a total of 4 criterion)
+- still have to consider the other factors.
