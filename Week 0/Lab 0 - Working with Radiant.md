@@ -6,6 +6,7 @@
 *Step 2:* Select / Click on the target file > `Import` dataset
 ![import-dataset-menu](../assets/import-dataset-menu.png)
 
+> **Important Note:** Have to load the files in before starting radiant to be able to access them.
 ## 2. Starting Radiant in a new tab
 In the second most upper toolbar, **select Addins > Start radiant (browser)** to launch the application. Click `Retry` for any browser pop-up configuration issues.
 ![start-radiant](../assets/start-radiant.png)

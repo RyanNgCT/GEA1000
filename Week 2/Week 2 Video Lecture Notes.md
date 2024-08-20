@@ -39,7 +39,6 @@ $$
 		- will only "shift" everything by constant $k$
 	- **multiplying** all data points by constant $c$ results in the S.D. being multiplied by the **absolute value of $c$**  *(i.e. $s_{xNew} = s_{xOld} \cdot |c|$)*.
 
-
 **Example of S.D. calculation** (explicit calculation)
 Qn. Consider a simple sample data set $x$ of just `3` points. Given that $x = \{1, 4, 7\}$, find the S.D. value of this dataset.
 1. Using the formula, **$s_x = \sqrt{\frac{(x_1 -\bar{x})^2 + (x_2 -\bar{x})^2 + ... + (x_n -\bar{x})^2}{n-1}}$**  we need to first obtain the mean of the dataset.
@@ -102,11 +101,10 @@ $$
       \frac{X \left[\frac{n}{2}\right] + X \left[\frac{n+1}{2}\right]}{2} & if\: n \: is \: even.
     \end{array}
 \end{array}
-
 $$
 
 **Overall vs Subgroup Medians**
-- subgroup mean would **NOT lie closer** to the group with the larger proportion $\implies$ knowing the median of the subgroup does not tell one about overall median
+- subgroup mean would *NOT* lie closer to the group with the larger proportion $\implies$ knowing the median of the subgroup does not tell one about overall median
 
 **R/s btwn Mean and Median**
 - For roughly symmetric distributions, $\bar{x} \approx Med(X)$.
@@ -231,12 +229,12 @@ $\therefore$  observational studies do not provide convincing evidence supportin
 | **Experimental Studies**                                                                                  | **Observational Studies**                                                                       |
 |-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
 | Assigned by researcher (should have only one independent variable -> random assignment + double-blinding) | Decided by subjects themselves (usually lifestyle choices)                                      |
-| Can provide cause-and-effect relationship                                                                 | Cannot provide cause-and-effect relationship (can only corroborate and expand on other studies) |
-|                                                                                                           | Can still provide evidence on association                                                       |
+| Can provide cause-and-effect relationship (CAUSATION)                                                     | Cannot provide cause-and-effect relationship (can only corroborate and expand on other studies) |
+|                                                                                                           | Can still provide evidence on association; can show correlation/relationship                    |
+- we wish that we as researchers can do an experiment all the time -> might not be ethical (people might not respond well, governing their lifestyle choices)
 
 ---
 ## D. Generalisability of Studies 
-
 Even if an experiment is:
 - well-designed
 - no ethical issues
