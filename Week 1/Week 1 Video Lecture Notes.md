@@ -101,7 +101,7 @@ B. Non-response Bias
 #### i. Simple Random Sampling (SRS)
 - units are selected randomly from the sampling frame without replacement
 	- use of a RNG/PRNG for selection
-	- each set of units has an **EQUAL CHANCE** of getting selected
+	- ==each set of units (or individuals) has an **EQUAL CHANCE** of getting selected==
 - *application: random polls across population*
 
 - Advantages
@@ -111,17 +111,19 @@ B. Non-response Bias
 	- **Accessibility** of selected participants -> different geographical locations, thus time consuming
 	- **Non-response** by selected participants -> skew results
 
+![SRS](../assets/SRS.png)
+
 #### ii. Systematic Sampling
-- pick every `nth` person to sample from each "group" / apply a selection interval *`k`* and random starting point from the first interval.
+- pick every `nth` person to sample from each "group" (have an interval) / apply a selection interval *`k`* and random starting point from the first interval.
 
 - Advantage
 	- Much **simpler** compared to SRS
 	- **don't need** to know the exact population size at planning stage
 - Disadvantage
 	- Not a good representation of the population of interest (since not random); potentially underrepresents the population
-
+![systematic-sampling](../assets/systematic-sampling.png)
 ### iii. Stratified Random Sampling
-- Sampling frame is subdivided into strata of **different sizes**
+- Sampling frame is subdivided into sub-groups or strata of **different sizes**
 	- units within stratas share similar characteristics (size of stratas might vary)
 	- Simple random sampling is employed within stratums
 - example: *sample count* within constituencies during elections
@@ -130,18 +132,24 @@ B. Non-response Bias
 	- Good representation of sample by stratum
 - Disadvantage
 	- need information about the sampling frame and strata classification criterion
+	
+![stratified-sampling](../assets/stratified-sampling.png)
 
 #### iv. Cluster Sampling
-- units are broken down into **similar** clusters
+- units (population) are broken down into **similar** clusters
 - randomly sample a fixed number of clusters
-- include all observations from selected classes
+- include **all observations / all of the members** from selected classes as members of the sample 
 
 - Advantages
-	- Less tedious and time consuming compared to other sampling methods
+	- Less tedious and time consuming compared to other sampling methods (often used when population is too large or there is a large geographical area that is required to sample)
 	- Less costly
 - Disadvantage
 	- **High variability** for dissimilar clusters or if clusters are very small
 
+*Compared to stratified sampling*
+- members of clusters have different characteristics, while members of strata have similar characteristics.
+
+![cluster-sampling](../assets/cluster-sampling.png)
 ### 5. Non-Probability Sampling
 - doesn't involve the use of chance
 - types of non-probabilistic methods (not mutually exclusive, i.e. `> 1` method can be used):
@@ -150,8 +158,8 @@ B. Non-response Bias
 
 #### i. Convenience Sampling
 - selection of subjects based on
-	- proximity
-	- availability
+	- proximity or,
+	- availability, with respect to the researcher
 
 - examples: mall surveys
 	- Disadvantage: 
@@ -196,7 +204,7 @@ Data Sets consists of individuals and variables/properties pertaining to those i
 #### Types of variables
 1. Categorical Variables
 	1. takes label values which are **mutually exclusive** (i.e. predominant colours of cars, no overlap)
-	2. ***Ordinal*** categorical: Comes with ordering that is usually represented using numbers (but CANNOT do arithmetic on data)
+	2. ***Ordinal*** categorical: Comes with ==ordering== that is usually represented using numbers (but CANNOT do arithmetic on data)
 		- i.e. 1 - Strongly Disagree, 2 - Disagree, 3 - Neutral, 4 - Agree... etc.
 		- number labelling doesn't transform categorical into numeric variables
 	3. ***Nominal*** categorical: no intrinsic ordering of variables

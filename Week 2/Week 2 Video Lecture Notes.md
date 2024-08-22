@@ -222,15 +222,16 @@ $\therefore$  observational studies do not provide convincing evidence supportin
 - Will still  use the terms treatment group (i.e. smokers) and control group (non-smokers) even though no actual "treatment" is applied from the researcher's end.
 
 	Treatment group $\Longleftrightarrow$ exposure;  Control Group $\Longleftrightarrow$ non-exposure
-
-
 ### 3. Experimental vs Observational Studies
 
+> *def* Confounder: variable that influences both independent and dependent variable.
+
 | **Experimental Studies**                                                                                  | **Observational Studies**                                                                       |
-|-----------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------|
+| --------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------- |
 | Assigned by researcher (should have only one independent variable -> random assignment + double-blinding) | Decided by subjects themselves (usually lifestyle choices)                                      |
 | Can provide cause-and-effect relationship (CAUSATION)                                                     | Cannot provide cause-and-effect relationship (can only corroborate and expand on other studies) |
 |                                                                                                           | Can still provide evidence on association; can show correlation/relationship                    |
+|                                                                                                           |                                                                                                 |
 - we wish that we as researchers can do an experiment all the time -> might not be ethical (people might not respond well, governing their lifestyle choices)
 
 ---

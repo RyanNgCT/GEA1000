@@ -1,5 +1,5 @@
 ## Basic Functionalities
-### 1. Importing Data from Local Machine into PostIt Cloud/RStudio
+### 1. Importing Data from Local Machine into PosIt Cloud/RStudio
 *Step 1:* Add file from local machine using the `Upload` menu in the Bottom-Right pane.
 ![import-data](../assets/import-data.png)
 
