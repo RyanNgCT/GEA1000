@@ -40,6 +40,9 @@
 ![bar-chart-one-var](../assets/bar-chart-one-var.png)
 #### ii. Two variables
 - can make use of data to determine if treatment X or Y is better in giving a Successful outcome?
+	- make use of a `2x2` data/contingency table
+		- independent variable as the row headers of the table
+		- dependent variable (outcome) as the column headers of the table
 
 ### 3. Marginal, Conditional & Joint rates
 

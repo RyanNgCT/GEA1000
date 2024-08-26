@@ -20,6 +20,7 @@ $$
 - provides a way to *quantify* the "spread" of data about the mean.
 - formula of S.D. is derived via the *variance* ($\sigma^2$), particularly using the square root operation.
 - S.D. value of zero -> there is no spread; S.D. value $\gt{0}$ -> there is some sort of spread in the sample.
+- *formulae:* $\frac{1}{n-1} ...$
 
 **Properties**
 - ∴ formula  S.D.  = $\sqrt{variance}$
@@ -82,7 +83,7 @@ Why is it that the Adelie and Chinstrap (species) have almost the same mean mass
 - when considering to factor in the spread btwn variables, we also need to consider spread relative to the mean (a.k.a. coefficient of variation)
 
 $$
-	coefficient\:  of\:  \sigma^2 = \frac{s_x}{\bar{x}} \: \mid \bar{x} \ne{0}
+	coefficient\:  of\:  \sigma^2 = \frac{s_x}{\bar{x}} = \frac{\sigma}{\mu} \: \mid \bar{x} \ne{0}
 $$
 - larger coefficient of variance (i.e. = $\frac{s_y}{\bar{y}} \gt{\frac{s_z}{\bar{z}}}$ $\implies$ spread of $y \gt$ spread of $z$).
 ### Median
@@ -173,8 +174,11 @@ goal: provide a cause-effect relationship btwn the two variables
 **Random Assignment**
 - required because there may be other dependent variables affecting the results of the independent variable
 	- the coffee-exam r/s case $\implies$ other factors like revision time (shorter vs longer), IQ of subjects, age of subjects etc. etc.
+
+- *if no random assignment done*: effect of confounding of 3rd party variables may be apparent
 	
 - helps to remove the effects of other dependent variables to make the treatment and control group largely similar in terms of other factors/variables
+	- aim is to not have any deterministic human discretion
 
 - is an *impartial* procedure using ***chance***
 	- each piece of paper has an equal chance of being picked out (==random draw *without replacement*==)
@@ -209,12 +213,16 @@ goal: provide a cause-effect relationship btwn the two variables
 
 > *def:* Double-blinding experiment occurs when both the subjects and assessors (of the experiment) are blinded.
 
+For controlled experiment w both double-blinding and random assignment -> can enable experimental results to show causality (ref generalisability).
+
 ### 2. Observational Studies
 > *def*: Observational study involves observing individuals and measures variables of interest
 
 - helps to eliminate ethical issues associated with the experiment (i.e. ethical to inject low doses of virus consent provided?)
 	- just record data based on real-world cases (don't force or incentivize participation)
 - researcher **does NOT attempt** to **directly** manipulate one variable to cause an effect on another variable.
+
+- observe subjects (association versus causation)
 
 $\therefore$  observational studies do not provide convincing evidence supporting a cause-effect relationship.
 

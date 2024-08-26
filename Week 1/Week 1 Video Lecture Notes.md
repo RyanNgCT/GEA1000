@@ -45,6 +45,12 @@
 
 - Outcome of EDA: have a few useful questions answered
 
+**Data-Cleaning**
+1. Ambiguous data
+2. Empty Cells
+3. Contextually unsound (i.e. C+ as a blood type?)
+4. Duplicated Labelling
+
 *Steps for EDA*
 1. Generate questions (or have a pre-determined question that we want answered by the data)
 2. Visualization and analysis (using data modelling tools)
@@ -67,8 +73,11 @@
 		- there might be redundant data in the sample
 	
 - **Census**: can obtain data for all members of population, but in the bounds of the sampling frame
-	- *attempt* to reach out to the whole population `≈ 100%` (may not achieve 100% response rate)
+	- ***attempt*** to reach out to the whole population `≈ 100%` (may not achieve 100% response rate)
 
+- **Statistic:** Inference about parameter from sample
+
+![estimate-parameter](../assets/estimate-parameter.png)
 #### Advantages of taking a sample
 - less costly administratively
 - data collection and processing is significantly faster compared to census data
@@ -128,6 +137,8 @@ B. Non-response Bias
 	- Simple random sampling is employed within stratums
 - example: *sample count* within constituencies during elections
 
+- Most important thing: ==Is there random selection involved?==
+
 - Advantage
 	- Good representation of sample by stratum
 - Disadvantage
@@ -178,11 +189,11 @@ B. Non-response Bias
 3. Remove unwanted units (from sampling frame)
 
 ### 7. Generalisability
-Criteria for Generalisability
+Criteria for Generalisability (has be met to a reasonable degree -> **all 4** should be met)
 - Good sampling frame (larger than or equal to target population) -> members of target population must not be left out
-- Use of probability-based sampling method -> minimise selection bias
+- Use of *probability-based sampling method* -> minimize selection bias
 - Large sample size -> reduce variability of data and amount of "error"
-- Minimum non-response proportion -> ↑ non-response = ↓ generalisability
+- Minimum non-response proportion (high response would be ~80%) -> ↑ non-response = ↓ generalisability
 
 > Purpose: want to achieve as accurate data collection as possible.
 
@@ -192,9 +203,9 @@ Criteria for Generalisability
 ### 1. Variables
 Data Sets consists of individuals and variables/properties pertaining to those individuals.
 - each row is a record (of an individual) and each column is a variable
-#### Definitions
-- any attribute that can be measured or labelled
-	- examples: Race, Age, Population Density, SES, Time, Sex/gender
+
+> *def*: an attribute that can be measured or labelled
+- examples: Race, Age, Population Density, SES, Time, Sex/gender
 
 **Independent & Dependent Variables**
 > Independent variable - might be subject to manipulation (i.e. *deliberately* by the researcher himself or *spontaneously* outside of the researcher's control)
