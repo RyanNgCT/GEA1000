@@ -91,7 +91,13 @@ i.e. based on "filtering out" both the independent and dependent variables
 4. Conclusion
 
 Calculate the percentages across all rows (limit focus to one row at a time)
+- use of marginal percentages
 ![table_w_row_perct](../assets/table_w_row_perct.png)
+
+**Conclusions drawn**
+- Treatment Y is positively associated to the success of the treatment (tend to see that Treatment Y and successes go hand-in-hand).
+- Treatment X is negatively associated to the success of the treatment.
+- Associative relationship between the Treatments and their outcomes.
 
 ---
 ## C. Association
@@ -103,7 +109,6 @@ Calculate the percentages across all rows (limit focus to one row at a time)
 	- use of rates to determine that one of the dependent `x` variables resulted in a better `y` variable or outcome.
 
 - association is NOT causation!
-
 ### Types of Conditional rates
 | Case                         | Remarks                                  |                                                                    |
 | ---------------------------- | ---------------------------------------- | ------------------------------------------------------------------ |
