@@ -171,16 +171,17 @@ goal: provide a cause-effect relationship btwn the two variables
 
 - both groups will then take the maths exam (provide experimental results for benchmarking )
 
-**Random Assignment**
-- required because there may be other dependent variables affecting the results of the independent variable
+#### Random Assignment
+- makes group assignment is **completely unrelated** to participant's background characteristics (ensures that treatment and control groups are similar in every way other them receipt of the treatment)
+- **required** because there may be other dependent variables affecting the results of the independent variable
 	- the coffee-exam r/s case $\implies$ other factors like revision time (shorter vs longer), IQ of subjects, age of subjects etc. etc.
 
 - *if no random assignment done*: effect of confounding of 3rd party variables may be apparent
 	
 - helps to remove the effects of other dependent variables to make the treatment and control group largely similar in terms of other factors/variables
-	- aim is to not have any deterministic human discretion
+	- aim is to not have any deterministic human discretion $\implies$ **reduce selection bias**
 
-- is an *impartial* procedure using ***chance***
+- is an *impartial* procedure using ***chance*** and is highly effective
 	- each piece of paper has an equal chance of being picked out (==random draw *without replacement*==)
 	- Steps:
 		1. randomly draw subjects until about half ($\approx 50\%$) of the subjects have been "removed" or grouped into the treatment group
@@ -188,18 +189,18 @@ goal: provide a cause-effect relationship btwn the two variables
 
 	- helps to create similar treatment & control groups in terms of other factors (i.e. revision time, IQ, age etc.) $\implies$ allows for similar distributions
 
-- treatment and control groups can have different sizes but as long as groups are quite large
+- treatment and control groups *can have different sizes* but as long as *groups are quite large*
 
 **"Random" connotations**
 - actual meaning: has a strict meaning related to an **impartial chance** mechanism
 - connotation / association: often interchangeable with "haphazard" -> researcher must ensure other experimental variables are not the case
 
-**Placebo**
+#### Placebo
 > *Definitions*
 > 1.  Placebo: Treatment with no active ingredients and no effects
 > 2.  Placebo effect: response observe when subject receive placebo treatment but **still show some positive effects.**, even if the treatment has no effect
 
-**Blinding**
+#### Blinding
 - somewhat like blindfolding the subjects
 - blinded subjects don't know which group they belong to (treatment or control)
 	- can add a placebo ("substitute for the treatment" taken by the control group) to help make the blinding more effective
@@ -216,15 +217,21 @@ goal: provide a cause-effect relationship btwn the two variables
 For controlled experiment w both double-blinding and random assignment -> can enable experimental results to show causality (ref generalisability).
 
 ### 2. Observational Studies
-> *def*: Observational study involves observing individuals and measures variables of interest
+> *def*: Observational study involves observing individuals and measures **variables of interest.**
 
 - helps to eliminate ethical issues associated with the experiment (i.e. ethical to inject low doses of virus consent provided?)
 	- just record data based on real-world cases (don't force or incentivize participation)
 - researcher **does NOT attempt** to **directly** manipulate one variable to cause an effect on another variable.
+- there may be logistical challenges when conducting the randomized experimental study
 
 - observe subjects (association versus causation)
 
-$\therefore$  observational studies do not provide convincing evidence supporting a cause-effect relationship.
+**Advantages**
+- Better external validity than experimental studies
+
+**Disadvantages**
+- $\therefore$  observational studies do not provide convincing evidence supporting a cause-effect relationship.
+- have weaker internal validity than experimental studies
 
 **Groups within the experiment**
 - Will still  use the terms treatment group (i.e. smokers) and control group (non-smokers) even though no actual "treatment" is applied from the researcher's end.
@@ -247,7 +254,29 @@ $\therefore$  observational studies do not provide convincing evidence supportin
 Even if an experiment is:
 - well-designed
 - no ethical issues
-- has double-blinding and random assignment,
+- has double-blinding **and** random assignment,
 
-We still might not be generalize the results to the entire population / everyone (recall generalisability has [3 other criteria](../Week%201/Week%201%20Video%20Lecture%20Notes.md###%207.%20Generalisability) and a total of 4 criterion)
-- still have to consider the other factors.
+We still might not be able to generalize the results to the entire population / everyone (recall generalisability has [3 other criteria](../Week%201/Week%201%20Video%20Lecture%20Notes.md###%207.%20Generalisability) and a total of 4 criterion) $\implies$ still have to consider the other factors.
+
+---
+## E. Additional Notes
+- Research conclusions / goals may be broadly categorized into three categories $-$ *descriptive, causal or predictive*
+
+> *def:* An **inference** is using what is observed to learn more about what is not observed.
+
+### 1. Descriptive Inference
+- summarize and visualize data (to better understanding a phenomenon)
+	- using observed facts
+- systematic description of a data set
+
+> *Example Problem /Research Question:* How well do students perform across countries?
+### 2. Causal Inference
+- quantifies the effect of **one variable on another variable**
+	- goal: understand how one variable affects another (independent variable affecting depending variable)
+
+> *Example:* What is the effect of public schools on reading and math scores on the PISA test?
+### 3. Predictive Inference
+- forecast data points **outside of the population sample** 
+	- use of observe facts to create the forcase
+
+> *Example:* What will the distribution of education look like in India in 10 years?

@@ -35,6 +35,9 @@
 		2. **Test a claim / hypothesis** - also about an average value or a proportion with given characteristic.
 		3. **Compare two sub-populations** or **Investigate a relationship btwn two variables within population** 
 
+	3. Characteristics of a good research question:
+		- specific, important and original (defined scope, aim to contribute original knowledge)
+
 	![research-question-types.png](../assets/research-question-types.png)
 ---
 ## C. Introduction to Sampling
@@ -174,7 +177,7 @@ B. Non-response Bias
 
 - examples: mall surveys
 	- Disadvantage: 
-		- **selection bias** for those who frequent malls as opposed to those who don't go to malls -> **insufficient coverage** of certain demographics within population of interest
+		- **selection bias** for those who frequent malls as opposed to those who don't go to malls -> **insufficient coverage** of certain demographics within population of interest, lack external validity
 		- **non-response bias**
 #### ii. Volunteer Sampling
 - researchers actively seek volunteers' participation
@@ -189,13 +192,13 @@ B. Non-response Bias
 3. Remove unwanted units (from sampling frame)
 
 ### 7. Generalisability
-Criteria for Generalisability (has be met to a reasonable degree -> **all 4** should be met)
-- Good sampling frame (larger than or equal to target population) -> members of target population must not be left out
-- Use of *probability-based sampling method* -> minimize selection bias
-- Large sample size -> reduce variability of data and amount of "error"
-- Minimum non-response proportion (high response would be ~80%) -> ↑ non-response = ↓ generalisability
+Criteria for Generalisability (has be met to a reasonable degree $\to$ **all 4** should be met)
+- **Good sampling frame** (larger than or equal to target population) $\implies$ members of target population must not be left out
+- Use of ***probability-based sampling method*** $\implies$ minimize selection bias
+- **Large sample size** $\implies$ reduce variability of data and amount of "error"
+- **Minimum non-response proportion** (high response would be ~80%) $\implies$ ↑ non-response = ↓ generalisability
 
-> Purpose: want to achieve as accurate data collection as possible.
+Purpose: want to achieve as accurate data collection as possible.
 
 ---
 ## D. Variables & Summary Statistics
@@ -284,4 +287,5 @@ $$
 	$$
 		\bar{x}_{weighted} = \frac{\sum w_n \cdot x_n}{\sum w_n}
 	$$
+
 

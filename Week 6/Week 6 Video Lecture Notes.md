@@ -148,6 +148,8 @@ $$
 
 - Gradient is the quotient of S.D. of $y$ divided by S.D. of $x$ multiply by $r$.
 - $m$ may not equate to $r$
+- when $r$ is positive, then $m$ is also positive $\to r_+ \implies m_+$
+	- $r_- \implies m_-$
 
 ---
 ## C. Studying non-linear relationships

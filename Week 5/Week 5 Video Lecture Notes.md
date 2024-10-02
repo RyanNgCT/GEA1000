@@ -138,6 +138,8 @@ Good to imagine a smooth curve outlining the distribution
 	- Maximum (Q4)
 
 - $IQR$ is calculated using $Q3 - Q1$
+	- find the **median** and then the median of upper and lower halves 
+	- computation of quartiles also differ in Excel (use a different computational algorithm)
 
 #### Outlier definition in terms of statistics used
 outlier is valid if it meets one of the two conditions:
