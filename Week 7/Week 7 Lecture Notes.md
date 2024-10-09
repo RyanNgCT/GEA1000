@@ -87,7 +87,8 @@ We will stick to assumption that the sample space contains only a finite number 
 ## C. Prosecutor's Fallacy
 - expert witness in dual-murder case (of children) commented that the chance of two children from an affluent family dying from Sudden Infant Death Syndrome is 1 in 73 million.
 	- $\implies$ later on the Royal Statistics Society decided to issue a public statement of how this probability calculated was misrepresented
-	- expert witness assumed that first child's death and second child's death are independent of each other (used the formula $P(First \: infant \: death | Clark \: innocent) \times P(Second \:infant \:death | Clark \: innocent)$ when they could in fact be related.)
+	- expert witness assumed that first child's death and second child's death are independent of each other
+		- used the formula $P(First \: infant \: death | Clark \: innocent) \times P(Second \:infant \:death | Clark \: innocent)$ when they might in fact be related
 
 - occurs when we assume that $P(A \: | B)  = P(B \: | A)$ ❌
 	- "all cows have four legs" does not imply "all four legged animals are cows"
@@ -127,13 +128,12 @@ $$
 Recall: We say that two variables are not related if $rate(A) = rate(A \: | B)$.
 - Thus, A and B are independent events whenever they are **not associated** with one another.
 
-
 #### Conditional Independence
 - Two events A & B are conditionally independent given an Event C with $P(C) > 0)$ if:
 $$
 P(A \cap B \: | \:C) = P(A \: | \: C) \times P(B \: | \: C)
 $$
-	- using the "distributive" technique
+- using the "distributive" technique
 
 ---
 ## D. Conjunction Fallacy
@@ -154,7 +154,6 @@ when in actuality:
 $$
 P(A \cap B) \le P(A) \: or \: P(B \cap A) \le P(B)
 $$
-
 
 ---
 ## E. Base Rate Fallacy
@@ -211,7 +210,7 @@ $$
 \therefore \: \sum_{i = 1}^{6} P(Y = i) = 1
 $$
 
-#### Continuous Random
+#### Continuous Random variables
 - continuous random is defined over an interval of values and is represented by the area under the **density curve**
 
 $$
