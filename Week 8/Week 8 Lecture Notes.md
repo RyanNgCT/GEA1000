@@ -80,6 +80,8 @@ $z^*$   =   z value from standard normal distribution (provides the lower and up
 $n$   =   sample size
 The $z^* \times \sqrt{\frac{p^*(1-p^*)}{n}}$ is known as the margin of *error* which impacts the **width** of the confidence interval
 
+$\sqrt{\frac{p^*(1-p^*)}{n}}$ is the standard deviation of standard error.
+
 ![z-value-table](../assets/z-value-table.png)
 ![sample-CI](../assets/sample-CI.png)
 
@@ -92,16 +94,88 @@ Claim that there is a 95% chance that the population proportion of a 5-room resa
 #### Properties of Confidence Intervals
 1. When a sample is taken with *the same sampling frame, sample sampling method (SRS)* but **smaller sample size**
 	1. The resultant $CI$ will be **larger** than the one with the larger sample size
-	2. Larger sample size = Smaller Random Error (Margin)
+	2. Larger Sample size = Smaller Random Error (Margin)
+		1. 
 	![Confidence-Interval-1](../assets/Confidence-Interval-1.png)
 
-2. Confidence Level impacts the confidence intervals
-	1. i.e. Confidence level of 90% vs 95% affects the $z^*$ value.
+2. **Confidence Level** impacts the confidence intervals
+	1. i.e. Confidence level of 90% vs 95% affects the $z^*$ value and hence the overall computation of the confidence interval.
+		- $z^*$ for 95% is `1.96`
+		- $z^*$ for 90% is `1.645`
+	2. Lower $z^*$ value results in a *narrower interval*
 
-
-### Alternative CI Formula
+### Population Mean $\mu$ Formula
 $$
-CI = \bar{x} \pm t^* \: \times \: \frac{s}{\sqrt{n}}
+\mu = \bar{x} \pm t^* \: \times \: \frac{s}{\sqrt{n}}
 $$
+- $\bar{x}$ : sample mean
+- $t^*$ : "t-value" from t-distribution table
+- $s$ : sample S.D.
+- $n$ : sample size
+
+- the margin of error (i.e. the stuff behind $\pm$) is a way to **quantify the random error**
+### Summary
+- confidence intervals are used to quantify random error present in **every sample**
+	- including SRS experiments where a level or bias can be reduced or considered as negligible or insignificant
+
+- confidence intervals and the confidence level used to compute the interval can be understood using repeated sampling
+	- avoid using terms like "chance" or "probability" when considering if population parameter lies within the **confidence interval** constructed from a **single sample**
+
+- properties of confidence intervals (see above)
+
+- how are confidence intervals constructed using **two** population parameters (i.e. population proportion and population mean $\mu$) $\implies$ using software (refer to the labs)
+
+---
+## C. Hypothesis Testing
+- can try to use a sample statistic to infer a population parameter using the formula:
+	```python
+	Sample Statistic = population parameter + bias + random error
+	```
+
+- when $bias \to 0$, $Sample \: Statistic \: = \:  population \: parameter \: + \: random \: error$
+
+- assumption that sample is taking from population using SRS technique, from a perfect sampling frame and no non-response bias
+
+> *def:* A **hypothesis test** is a statistical inference method used to decide if the data from a random sample is **sufficient** to support *a particular hypothesis* about a population.
+- enables us to ask if the observed sample population deviates from the hypothesized population $\implies$ explainable via *chance variation*?
+
+> def: A **typical hypothesis** about a population could be anything that we want to know about the population.
+
+### Types of Hypotheses
+1. Is a population parameter $x$?
+2. In the population, are the categorical variables $A$ and $B$ **associated** with each other?
+
+### Questions:
+Do we need to reject out null hypothesis and does the sample proportion warrant it (is it sufficient to reject $H_0 \:$)
+
+### Steps in Hypothesis Testing
+1. Identifying the **question and the context**, stating the null ($H_0\:$) and alternative ($H_1\:$) hypotheses.
+	1. $H_0\:$ the statement being tested, which makes a claim about current or historical population mean ($\mu$)
+	2. $H_1\:$ the statement  to be adopted if the evidence disproves $H_0$.
+
+2. Set the **significance level** of the test, which measures the threshold / tolerance of deviation from what is hypothesized
+	1. can the deviation from the hypothesis to the actual sample reading be explained by chance variation?
+	2. usually set as $5\%, 1$ or $10 \%$.
+
+3. Use the sample to find the **relevant sample statistic**
+
+4. With the sample statistic and the hypothesis, **calculate** the **p-value**
+
+5. Make the **conclusion** of the hypothesis test. Reject or accept $H_0$?
+	1. conclusion depends on (a) calculated p-value & (b) significance level set for the test
+
+> *def:* The $p\text -value$ is the **probability** of obtaining a result as extreme or more extreme than our observation in the direction of the alternative hypothesis $H_1$, assuming $H_0$ is true.
 
 
+#### Example Case Study
+
+##### $H_0$
+- case where observation explainable by chance variation
+- population prop = 0.5
+- can write as $H_0 : p = 0.5$
+
+##### $H_1$
+- population proportion $\lt 0.5$
+- can write as $H_1 : p \lt 0.5$
+
+Important Note that $H_0 \cap H_1 = \emptyset \: \implies$ one or the other true only!

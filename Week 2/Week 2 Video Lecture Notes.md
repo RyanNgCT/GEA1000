@@ -12,7 +12,7 @@
 - are measures of dispersion
 #### I. Sample Variance
 $$
-\sigma^2 = \frac{(x_1 -\bar{x})^2 + (x_2 -\bar{x})^2 + ... + (x_n -\bar{x})^2}{n-1}
+s^2 = \frac{(x_1 -\bar{x})^2 + (x_2 -\bar{x})^2 + ... + (x_n -\bar{x})^2}{n-1}
 
 $$
 - `n` is the number of data points; $x_1$ to $x_n$ is the values contained within the set of inputs (values of numerical *`x`* in the data set).
@@ -23,7 +23,7 @@ $$
 - *formulae:* $\frac{1}{n-1} ...$
 
 **Properties**
-- ∴ formula  S.D.  = $\sqrt{variance}$
+- formula for Sample S.D.  = $\sqrt{variance}$
 	$$
 		s_x = \sqrt{\frac{(x_1 -\bar{x})^2 + (x_2 -\bar{x})^2 + ... + (x_n -\bar{x})^2}{n-1}}
 	$$
@@ -33,6 +33,12 @@ $$
 		- add up the differences to get the `"total spread"`
 		- divide by total number of points to get `"average spread"` 
 		- can't do this as average spread will be `0` ❌, $\because$ `+ve` and `-ve` values might cancel each other out
+
+
+Population S.D. formula
+$$
+\sigma_x = \sqrt{\frac{\sum_{i = 1}^N (x_i - \bar{x})^2}{N}}
+$$
 
 - standard deviation is:
 	- **non-negative** (i.e. $\geq 0$).
