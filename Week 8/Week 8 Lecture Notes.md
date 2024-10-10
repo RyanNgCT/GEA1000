@@ -156,19 +156,19 @@ Do we need to reject out null hypothesis and does the sample proportion warrant 
 2. Set the **significance level** of the test, which measures the threshold / tolerance of deviation from what is hypothesized
 	1. can the deviation from the hypothesis to the actual sample reading be explained by chance variation?
 	2. usually set as $5\%, 1$ or $10 \%$.
+	3. unless stated otherwise, take sig level to be $5 \%$ or $0.05$
 
 3. Use the sample to find the **relevant sample statistic**
 
 4. With the sample statistic and the hypothesis, **calculate** the **p-value**
 
 5. Make the **conclusion** of the hypothesis test. Reject or accept $H_0$?
-	1. conclusion depends on (a) calculated p-value & (b) significance level set for the test
+	1. conclusion depends on **calculated p-value versus significance level** for the test
 
 > *def:* The $p\text -value$ is the **probability** of obtaining a result as extreme or more extreme than our observation in the direction of the alternative hypothesis $H_1$, assuming $H_0$ is true.
 
 
-#### Example Case Study
-
+#### Example Case Study 1 -- H-Test for Population Proportion
 ##### $H_0$
 - case where observation explainable by chance variation
 - population prop = 0.5
@@ -179,3 +179,44 @@ Do we need to reject out null hypothesis and does the sample proportion warrant 
 - can write as $H_1 : p \lt 0.5$
 
 Important Note that $H_0 \cap H_1 = \emptyset \: \implies$ one or the other true only!
+
+"null value" is the value you want to disprove" with hypo testing
+
+**Possible outcomes/train of thoughts**
+$T1$ - $H_0$ is valid despite the low sample proportion $p^* = 0.335$ (using `SP_Sample_A.csv`), as there is a chance of variation due to fewer students who completed the `test_prepration_course` being selected
+
+$T2$ - $H_1$ is valid ($H_0$ invalid) because $p \lt 0.5$ and thus $p^* < 0.5$ as well.
+
+As shown in the results below, we eventually reject $H_0$ and accept $H_1$ because
+- The $p\text - value$ is smaller than $0.001$
+![p-value-radiant](../assets/p-value-radiant.png)
+
+
+![decision-chart-pval-signlvl](../assets/decision-chart-pval-signlvl.png)
+
+
+#### Example Case Study 2 -- H-Test for Population Mean
+##### $H_0$
+- Population mean ($\mu$) reading score $= 69$
+
+##### $H_1$
+- Population mean ($\mu$) reading score $\gt 69$
+S
+
+**Possible outcomes/train of thoughts**
+$T1$ - $H_0$ is valid despite high sample mean of $\mu = 70.345$ observed due to chance variation and simply because there were more students who scored better in the reading test in the sample
+
+$T2$ - $H_1$ is valid ($H_0$ invalid) because $\mu > 69 \implies \: \therefore$ sample mean $\bar{x} = 70.345 \gt 69$
+
+$\therefore\:$, cannot reject $H_0$ since $p = 0.093 > 0.05$.
+![reading-score-mean](../assets/reading-score-mean.png)
+
+#### Example Case Study 3 -- H-Test for Association
+##### $H_0$
+- no association between two variables at population level (i.e. `gender` and `test_preparation_course`)
+##### $H_1$
+- there is an association between two variables at population level (i.e. `gender` and `test_preparation_course`)
+
+Do this using the chi-squared test for association (`Basics > Cross-tabs` in Radiant)'
+- conclude that we stick to $H_0$ that there is no association, since $p = 0.517 > 0.05 / 5 \%$ (significance value)
+![hypo-testing-association](../assets/hypo-testing-association.png)
