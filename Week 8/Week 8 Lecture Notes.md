@@ -95,7 +95,7 @@ Claim that there is a 95% chance that the population proportion of a 5-room resa
 1. When a sample is taken with *the same sampling frame, sample sampling method (SRS)* but **smaller sample size**
 	1. The resultant $CI$ will be **larger** than the one with the larger sample size
 	2. Larger Sample size = Smaller Random Error (Margin)
-		1. 
+
 	![Confidence-Interval-1](../assets/Confidence-Interval-1.png)
 
 2. **Confidence Level** impacts the confidence intervals
@@ -218,5 +218,5 @@ $\therefore\:$, cannot reject $H_0$ since $p = 0.093 > 0.05$.
 - there is an association between two variables at population level (i.e. `gender` and `test_preparation_course`)
 
 Do this using the chi-squared test for association (`Basics > Cross-tabs` in Radiant)'
-- conclude that we stick to $H_0$ that there is no association, since $p = 0.517 > 0.05 / 5 \%$ (significance value)
+- conclude that we cannot reject $H_0$ that there is no association (since insufficient evidence as per table above), since $p = 0.517 > 0.05 / 5 \%$ (significance value)
 ![hypo-testing-association](../assets/hypo-testing-association.png)

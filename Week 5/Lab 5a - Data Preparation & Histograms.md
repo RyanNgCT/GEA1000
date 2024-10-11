@@ -31,6 +31,7 @@ age = year(month) - lease_commence_date
 - save the data in the `Manage` pane
 
 ![Lab5a-5](../assets/Lab5a-5.png)
+need to also Save the original `housing_raw.csv` file so that the age variable is populated using **"save data to type > to global workspace"**.
 
 ---
 ## Histograms -- Radiant
@@ -60,6 +61,21 @@ ylab("number of flats sold")
 ![Lab5a-7](../assets/Lab5a-7.png)
 
 ![Lab5a-8](../assets/Lab5a-8.png)
+
+Interactive plot (using the `ggplotly` library)
+```r
+p =
+jan21tojun21 %>% # pass the whole dataset to the next function (i.e. ggplot)
+ggplot(aes(x = age)) +
+geom_histogram(breaks = seq(0, 54, by = 2), fill="orange", color="blue") +
+
+# provide a title and override default labels for the plot
+ggtitle("Age of HDB flats sold btwn Jan and Jun 2021") +
+xlab("age of the flats") +
+ylab("number of flats sold")
+
+ggplotly(p) %>% render()
+```
 
 ---
 ## More Histograms in Radiant
