@@ -16,6 +16,8 @@ Important to have well-defined generalisability criteria when conducting samplin
 Sample Statistic = population parameter + bias + random error
 ```
 
+An **unbiased sample statistic** does not have selection, non-response and measurement errors/biases
+
 1. Need to know the **survey methodology** used to generate the sample
 2. Need to also know the **statistical methods** used to infer finding(s) from the target population in question.
 	1. can statistics from the sample level be generalised / lead to similar conclusions at the population level?
@@ -47,7 +49,8 @@ After EDA is completed, for a given sample, we need to cycle between:
 
 - random error refers to the small differences arising as a result of *sample variability* when using any probability-based sampling method.
 
-### Confidence Interval
+---
+## C. Confidence Interval
 > *def:* A **confidence interval** is the range of values that is likely to contain a population parameter based on a certain degree of confidence.
 - range of values in which the *true mean* may fall within 
 - allows sampling variability to be taken into consideration
@@ -56,6 +59,8 @@ After EDA is completed, for a given sample, we need to cycle between:
 	- represented as a percentage (%)
 	- termed as the confidence level (which is typically 95% or 99%)
 	- refers to the long-run reliability of the method used to construct the interval (via repeated sampling)
+
+For confidence intervals to be valid, they *have to utilize Simple Random Sampling* (SRS).
 
 Focus is on the construction of *confidence intervals* for the **population proportion and mean.**
 - we consider `flat_type` variable in the HDB resale dataset $\implies$ indicates the type of HDB resale flat (i.e. 1-room, 2-room ... 5-room, executive, multi-generational)
@@ -82,6 +87,11 @@ The $z^* \times \sqrt{\frac{p^*(1-p^*)}{n}}$ is known as the margin of *error* w
 
 $\sqrt{\frac{p^*(1-p^*)}{n}}$ is the standard deviation of standard error.
 
+$z^*$ increases as the percentage confidence (confidence level) increases
+- the wider the margin, the **more meaningless** the interval is
+
+To have a more accurate confidence interval, we can increase the sample size $n$ (to reduce margin of error).
+
 ![z-value-table](../assets/z-value-table.png)
 ![sample-CI](../assets/sample-CI.png)
 
@@ -104,6 +114,8 @@ Claim that there is a 95% chance that the population proportion of a 5-room resa
 		- $z^*$ for 90% is `1.645`
 	2. Lower $z^*$ value results in a *narrower interval*
 
+- 95% confidence interval: when we repeat the experiment again and again, **about 95 out of 100** of the intervals contain the population parameter
+
 ### Population Mean $\mu$ Formula
 $$
 \mu = \bar{x} \pm t^* \: \times \: \frac{s}{\sqrt{n}}
@@ -122,11 +134,13 @@ $$
 	- avoid using terms like "chance" or "probability" when considering if population parameter lies within the **confidence interval** constructed from a **single sample**
 
 - properties of confidence intervals (see above)
+	- intervals are based on the sample (could vary from sample to sample)
+	- population parameter of interest is an **unknown constant value** (it doesn't change and there is no probabilistic element in it).
 
 - how are confidence intervals constructed using **two** population parameters (i.e. population proportion and population mean $\mu$) $\implies$ using software (refer to the labs)
 
 ---
-## C. Hypothesis Testing
+## D. Hypothesis Testing
 - can try to use a sample statistic to infer a population parameter using the formula:
 	```python
 	Sample Statistic = population parameter + bias + random error
@@ -157,6 +171,8 @@ Do we need to reject out null hypothesis and does the sample proportion warrant 
 	1. can the deviation from the hypothesis to the actual sample reading be explained by chance variation?
 	2. usually set as $5\%, 1$ or $10 \%$.
 	3. unless stated otherwise, take sig level to be $5 \%$ or $0.05$
+	4. the probability of observing value or more extreme in the direction of alternative hypothesis, given that the null hypothesis is true
+		1. can be computed as $P(Reject \:H_0\:  | \:H_0 \: is \: true)$
 
 3. Use the sample to find the **relevant sample statistic**
 
@@ -193,7 +209,6 @@ As shown in the results below, we eventually reject $H_0$ and accept $H_1$ becau
 
 
 ![decision-chart-pval-signlvl](../assets/decision-chart-pval-signlvl.png)
-
 
 #### Example Case Study 2 -- H-Test for Population Mean
 ##### $H_0$
