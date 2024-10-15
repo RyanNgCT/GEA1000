@@ -186,8 +186,8 @@ Apart from the **sensitivity (TP rate)** and **specificity (TN rate)**, it is al
 - applies to both discrete and continuous random variables
 - The mode of a discrete random variable is the value of x that attains the highest y-value.
 
-#### Discrete Random
-Example--probabilities involved when rolling an (unequal?) six-sided die
+#### Discrete Random variables
+Example of probabilities involved when rolling an **unequal six-sided die** might be as follows:
 $$
 \begin{aligned}
 P(Y = 1) = \frac{1}{3}
@@ -205,11 +205,12 @@ P(Y = 3) = \frac{1}{12}
 P(Y = 6) = \frac{1}{12}
 \end{aligned}
 $$
-
 $$
 \therefore \: \sum_{i = 1}^{6} P(Y = i) = 1
 $$
 
+Example 2 (Tutorial 4 Qn 1)
+![die-probability](../assets/die-probability.png)
 #### Continuous Random variables
 - continuous random is defined over an interval of values and is represented by the area under the **density curve**
 

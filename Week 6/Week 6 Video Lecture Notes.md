@@ -148,10 +148,9 @@ $$
 
 - Gradient is the quotient of S.D. of $y$ divided by S.D. of $x$ multiply by $r$.
 - $m$ may not equate to $r$
-- when $r$ is positive, then $m$ is also positive $\to r_+ \implies m_+$
-	- $r_- \implies m_-$
+- when $r$ is positive, then $m$ is also positive $\to r_+ \implies m_+$ and  $r_- \implies m_-$ (vice versa)
 
 ---
 ## C. Studying non-linear relationships
 - use a combination of correlation coefficient + scatter plot (for bivariate data) to test for non-linear relationships
-	- show a clear visual of exponentiation to disprove linearity
+	- show a **clear visual** of exponentiation or a quadratic / cubic function to disprove linearity and hence linear relationship between variables

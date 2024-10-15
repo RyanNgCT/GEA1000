@@ -265,7 +265,7 @@ Even if an experiment is:
 We still might not be able to generalize the results to the entire population / everyone (recall generalisability has [3 other criteria](../Week%201/Week%201%20Video%20Lecture%20Notes.md###%207.%20Generalisability) and a total of 4 criterion) $\implies$ still have to consider the other factors.
 
 ---
-## E. Additional Notes
+## E. Additional Notes (may not be tested)
 - Research conclusions / goals may be broadly categorized into three categories $-$ *descriptive, causal or predictive*
 
 > *def:* An **inference** is using what is observed to learn more about what is not observed.

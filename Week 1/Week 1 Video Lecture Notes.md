@@ -283,7 +283,7 @@ $$
 	- proportion serves as good metric when comparing groups of unequal sizes
 	- proportion is nothing but a special case of the mean
 
-- formula
+- formula for `wt_mean`:
 	$$
 		\bar{x}_{weighted} = \frac{\sum w_n \cdot x_n}{\sum w_n}
 	$$

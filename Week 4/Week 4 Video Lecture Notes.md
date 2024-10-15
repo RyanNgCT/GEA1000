@@ -1,4 +1,4 @@
-## A. Learning Outcomes and Key Terms - for categorical data analysis (Part 2)
+## A. Learning Outcomes and Key Terms - for categorical data analysis
 - Simpson's paradox
 - define and identify potential confounding variables in studies
 

@@ -1,4 +1,4 @@
-## A. Learning Outcomes and Key Terms - for categorical data analysis (Part 1)
+## A. Learning Outcomes and Key Terms - for categorical data analysis
 - EDA techniques and concepts for **categorical data**
 - describe categorical variables using frequency and rates
 - use and interpret contingency tables and bar graphs for categorical variables

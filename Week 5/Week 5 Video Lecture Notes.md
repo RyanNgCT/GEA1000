@@ -183,12 +183,13 @@ Can be done through a $\underline{combination}$ of
 1. Scatter Plots - give idea of the pattern
 2. combined with Correlation Coefficients - checks for linear r/s
 3. Regression Analysis - fit a line or curve to the data
-### Deterministic Relationships
+
+### Relationships
+#### Deterministic Relationships
 > *def:* the value of one variable can be **determined exactly** if we know the value of the other variable in question. (and probably the function of computation, $f\:$)
 - commonly represented by straight lines on a plot
 	- i.e. Fahrenheit-Celsius conversion or Meter-Feet conversion
-
-### Non-deterministic Relationships
+#### Non-deterministic Relationships
 - is the main focus of this section
 - often not possible for a statistical or non-deterministic relationship to find or approximate the value of one variable given another (i.e. not predictable)
 	- associative relationship is used instead to describe how entities are linked to each other
@@ -198,15 +199,14 @@ Can be done through a $\underline{combination}$ of
 ### Scatter plots
 - use if data points are patchy (lots of data)
 - if not sure which is the independent and which is the dependent variable, then arbitrarily choose both
-
 #### Describing Scatter Plots
-when describing these plots overall pattern, we use a combination of:
-- Direction
+when describing these plots **overall pattern** / the "general trend", we use a combination of:
+- *Direction*
 	- **Positive** Relationship: ↑ indep, ↑ dep variable (↑ explanatory, ↑ response)
 	- **Negative** Relationship: ↑ indep, ↓ dep variable
-- Form
+- *Form*
 	- its general shape (linear or non-linear/curve patterns) $\implies$ linear if it appear to scatter around a straight line
-- Strength
+- *Strength*
 	- description of ***how closely*** data follows the form (as described above)
 	- do points deviate from the best fit curve or line?
 

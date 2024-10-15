@@ -16,6 +16,8 @@ Important to have well-defined generalisability criteria when conducting samplin
 Sample Statistic = population parameter + bias + random error
 ```
 
+- population parameter is a broad term, which may mean the "target value" we are trying to find out. This could be population mean $\mu$ in some cases, and population proportion $p$ in other cases (context-dependent).
+
 An **unbiased sample statistic** does not have selection, non-response and measurement errors/biases
 
 1. Need to know the **survey methodology** used to generate the sample
@@ -150,11 +152,13 @@ $$
 
 - assumption that sample is taking from population using SRS technique, from a perfect sampling frame and no non-response bias
 
+- we will only need to do a hypothesis test for a *sample*, **NOT** for an entire population!
+
 > *def:* A **hypothesis test** is a statistical inference method used to decide if the data from a random sample is **sufficient** to support *a particular hypothesis* about a population.
 - enables us to ask if the observed sample population deviates from the hypothesized population $\implies$ explainable via *chance variation*?
 
 > def: A **typical hypothesis** about a population could be anything that we want to know about the population.
-
+- can only prove what the null hypothesis is not
 ### Types of Hypotheses
 1. Is a population parameter $x$?
 2. In the population, are the categorical variables $A$ and $B$ **associated** with each other?
@@ -183,13 +187,11 @@ Do we need to reject out null hypothesis and does the sample proportion warrant 
 
 > *def:* The $p\text -value$ is the **probability** of obtaining a result as extreme or more extreme than our observation in the direction of the alternative hypothesis $H_1$, assuming $H_0$ is true.
 
-
 #### Example Case Study 1 -- H-Test for Population Proportion
 ##### $H_0$
 - case where observation explainable by chance variation
 - population prop = 0.5
 - can write as $H_0 : p = 0.5$
-
 ##### $H_1$
 - population proportion $\lt 0.5$
 - can write as $H_1 : p \lt 0.5$
@@ -207,16 +209,14 @@ As shown in the results below, we eventually reject $H_0$ and accept $H_1$ becau
 - The $p\text - value$ is smaller than $0.001$
 ![p-value-radiant](../assets/p-value-radiant.png)
 
-
+What to do based on `p-value` versus significance level.
 ![decision-chart-pval-signlvl](../assets/decision-chart-pval-signlvl.png)
 
 #### Example Case Study 2 -- H-Test for Population Mean
 ##### $H_0$
 - Population mean ($\mu$) reading score $= 69$
-
 ##### $H_1$
 - Population mean ($\mu$) reading score $\gt 69$
-S
 
 **Possible outcomes/train of thoughts**
 $T1$ - $H_0$ is valid despite high sample mean of $\mu = 70.345$ observed due to chance variation and simply because there were more students who scored better in the reading test in the sample
@@ -235,3 +235,20 @@ $\therefore\:$, cannot reject $H_0$ since $p = 0.093 > 0.05$.
 Do this using the chi-squared test for association (`Basics > Cross-tabs` in Radiant)'
 - conclude that we cannot reject $H_0$ that there is no association (since insufficient evidence as per table above), since $p = 0.517 > 0.05 / 5 \%$ (significance value)
 ![hypo-testing-association](../assets/hypo-testing-association.png)
+---
+### Chi-squared tests
+- how to look at the expected value versus what I have in practise
+	- the further the difference, the more evidence to say that there is a relation of one categorical variable over another
+
+- chi square variable $\implies$ sum of all 4 values in a `2 x 2` table.
+
+- the lower the p-value, the increase of the likelihood where we reject $H_0$
+
+---
+### Error Margin Calculation Formula (Excel)
+
+```excel
+=AVERAGE($F:$F)
+=STDEV.S($F:$F)
+=CONFIDENCE.T(0.05, J2, 200) # args are (1 - interval, cell, sample_size)
+```
