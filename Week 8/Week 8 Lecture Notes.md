@@ -16,15 +16,15 @@ Important to have well-defined generalisability criteria when conducting samplin
 Sample Statistic = population parameter + bias + random error
 ```
 
-- population parameter is a broad term, which may mean the "target value" we are trying to find out. This could be population mean $\mu$ in some cases, and population proportion $p$ in other cases (context-dependent).
+- population parameter is a *broad term*, which may mean the "target value" we are trying to find out. This could be population mean $\mu$ in some cases, and population proportion $p$ in other cases (it is context-dependent).
 
-An **unbiased sample statistic** does not have selection, non-response and measurement errors/biases
+An **unbiased sample statistic** does not have selection, non-response and measurement errors/biases.
 
 1. Need to know the **survey methodology** used to generate the sample
 2. Need to also know the **statistical methods** used to infer finding(s) from the target population in question.
-	1. can statistics from the sample level be generalised / lead to similar conclusions at the population level?
+	1. can the statistics from the sample level be generalised or lead to similar conclusions at the *population level*?
 
-**Methods to reduce bias (recap)**
+#### Methods to reduce bias (recap)
 1. Good Sampling Frame $\to$ zero selection bias
 2. Use of probability-based sampling methods $\to$ zero selection bias
 3. 100% response rate $\to$ zero non-response bias
@@ -45,7 +45,7 @@ After EDA is completed, for a given sample, we need to cycle between:
 	1. example: Doctor needing to take all of a patient's blood for blood test instead of a small sample
 
 ### Rule of Inference
-> *def:* The *Fundamental Rule of Inference* states that available data can be used to make inferences about a much larger group if the data can be considered to be representative with regards to the question of interest.
+> *def:* The ***Fundamental Rule of Inference*** states that available data can be used to make inferences about a much larger group if the data can be considered to be representative with regards to the question of interest.
 
 - by adopting good sampling methods and good practices (i.e. having a good sampling frame), we can **greatly reduce selection bias** to be insignificant (i.e. selection bias $\implies$ 0).
 
@@ -55,19 +55,19 @@ After EDA is completed, for a given sample, we need to cycle between:
 ## C. Confidence Interval
 > *def:* A **confidence interval** is the range of values that is likely to contain a population parameter based on a certain degree of confidence.
 - range of values in which the *true mean* may fall within 
-- allows sampling variability to be taken into consideration
+- allows for sampling variability to be taken into consideration
 
-- degree of confidence is
-	- represented as a percentage (%)
-	- termed as the confidence level (which is typically 95% or 99%)
-	- refers to the long-run reliability of the method used to construct the interval (via repeated sampling)
+The Degree of confidence is
+- represented as a percentage (%)
+- termed as the **confidence level** (which is typically 95% or 99%)
+- refers to the long-run reliability of the method used to construct the interval (via repeated sampling)
 
-For confidence intervals to be valid, they *have to utilize Simple Random Sampling* (SRS).
+For confidence intervals to be valid, *have to utilize Simple Random Sampling* (SRS).
 
 Focus is on the construction of *confidence intervals* for the **population proportion and mean.**
 - we consider `flat_type` variable in the HDB resale dataset $\implies$ indicates the type of HDB resale flat (i.e. 1-room, 2-room ... 5-room, executive, multi-generational)
 
-Formulas:
+Formula:
 $$
 Raw \: Population\: Proportion_{i} = \frac{Frequency\:(i)}{Total  \: Frequency}
 $$
@@ -76,7 +76,6 @@ $$
 Actual\: Population \: Proportion_i = Raw \: Population\: Proportion_{i} \: \pm \: random \: error
 $$
 - *Note:* random error could be negative.
-
 
 #### Confidence Interval Formula
 $$
@@ -136,8 +135,8 @@ $$
 	- avoid using terms like "chance" or "probability" when considering if population parameter lies within the **confidence interval** constructed from a **single sample**
 
 - properties of confidence intervals (see above)
-	- intervals are based on the sample (could vary from sample to sample)
-	- population parameter of interest is an **unknown constant value** (it doesn't change and there is no probabilistic element in it).
+	- intervals are based on the sample ( as it could vary from sample to sample)
+	- population parameter of interest is an **unknown constant value** (it doesn't change and there is *no probabilistic element* in it).
 
 - how are confidence intervals constructed using **two** population parameters (i.e. population proportion and population mean $\mu$) $\implies$ using software (refer to the labs)
 
@@ -165,7 +164,6 @@ $$
 
 ### Questions:
 Do we need to reject out null hypothesis and does the sample proportion warrant it (is it sufficient to reject $H_0 \:$)
-
 ### Steps in Hypothesis Testing
 1. Identifying the **question and the context**, stating the null ($H_0\:$) and alternative ($H_1\:$) hypotheses.
 	1. $H_0\:$ the statement being tested, which makes a claim about current or historical population mean ($\mu$)
@@ -197,11 +195,10 @@ Do we need to reject out null hypothesis and does the sample proportion warrant 
 - can write as $H_1 : p \lt 0.5$
 
 Important Note that $H_0 \cap H_1 = \emptyset \: \implies$ one or the other true only!
-
 "null value" is the value you want to disprove" with hypo testing
 
 **Possible outcomes/train of thoughts**
-$T1$ - $H_0$ is valid despite the low sample proportion $p^* = 0.335$ (using `SP_Sample_A.csv`), as there is a chance of variation due to fewer students who completed the `test_prepration_course` being selected
+$T1$ - $H_0$ is valid despite the low sample proportion $p^* = 0.335$ (using `SP_Sample_A.csv`), as there is a chance of variation due to fewer students who completed the `test_prepration_course` being selected.
 
 $T2$ - $H_1$ is valid ($H_0$ invalid) because $p \lt 0.5$ and thus $p^* < 0.5$ as well.
 
@@ -237,7 +234,7 @@ Do this using the chi-squared test for association (`Basics > Cross-tabs` in Rad
 ![hypo-testing-association](../assets/hypo-testing-association.png)
 ---
 ### Chi-squared tests
-- how to look at the expected value versus what I have in practise
+- how to look at the expected value versus what I have in practice
 	- the further the difference, the more evidence to say that there is a relation of one categorical variable over another
 
 - chi square variable $\implies$ sum of all 4 values in a `2 x 2` table.
@@ -245,7 +242,7 @@ Do this using the chi-squared test for association (`Basics > Cross-tabs` in Rad
 - the lower the p-value, the increase of the likelihood where we reject $H_0$
 
 ---
-### Error Margin Calculation Formula (Excel)
+### Lab: Error Margin Calculation Formula (Excel)
 
 ```excel
 =AVERAGE($F:$F)

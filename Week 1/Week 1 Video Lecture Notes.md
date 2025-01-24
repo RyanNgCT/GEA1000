@@ -120,8 +120,8 @@ B. Non-response Bias
 	- results don't change haphazardly btwn samples
 	- **Good representation:** group selected (sampling frame) is quite small, but likely to be representative of the population
 - Disadvantage
-	- **Accessibility** of selected participants -> different geographical locations, thus time consuming
-	- **Non-response** by selected participants -> skew results
+	- **Accessibility** of selected participants $\implies$ different geographical locations, thus time consuming.
+	- **Non-response** by selected participants $\implies$ skew results due to a possibility of non-participation of certain demographic
 
 ![SRS](../assets/SRS.png)
 
@@ -166,7 +166,7 @@ B. Non-response Bias
 ![cluster-sampling](../assets/cluster-sampling.png)
 ### 5. Non-Probability Sampling
 - doesn't involve the use of chance
-- types of non-probabilistic methods (not mutually exclusive, i.e. `> 1` method can be used):
+- types of non-probabilistic methods (not mutually exclusive, i.e. $> 1$ method can be used):
 	- Convenience Sampling, Volunteer Sampling
 	- Quota Sampling, Judgement Sampling (outside of course scope)
 
@@ -181,14 +181,13 @@ B. Non-response Bias
 		- **non-response bias**
 #### ii. Volunteer Sampling
 - researchers actively seek volunteers' participation
-
-- example: online polls
-	- selection bias
-	- non-response bias
+- Examples: online polls
+	- has selection bias
+	- has non-response bias
 
 ### 6. Good Practices
-1. Choosing an appropriate sampling frame -> ensure good coverage of target population
-2. Use a probability sampling method -> reduce selection bias to a minimal
+1. Choosing an appropriate sampling frame $\implies$ ensure good coverage of target population
+2. Use a probability sampling method $\implies$ reduce selection bias to a minimal
 3. Remove unwanted units (from sampling frame)
 
 ### 7. Generalisability
@@ -230,7 +229,7 @@ Data Sets consists of individuals and variables/properties pertaining to those i
 	3. Continuous numerical
 		- can meaningfully take on all possible numerical values within a range (i.e. time)
 
-Notes: 
+**Notes:** 
 - *both numerical and categorical can be independent or dependent, the type of the variable does not dictate anything*
 - type of variable influences type of analysis & visualization tools
 
@@ -243,7 +242,7 @@ Summary statistics are split into two broad categories:
 1. Measures of Central Tendency (Mean, Median and Mode)
 2. Measures of Dispersion (Inter-Quartile Range and Standard Deviation)
 
-### The Mean ($\bar{x}$)
+#### The Mean ($\bar{x}$)
 **Formula:**
 - 1st example: normal notation
 - 2nd example: sigma notation
@@ -254,18 +253,16 @@ $$
 **Properties**
 1. The summation of all elements equates to the **product of the mean** and the **number of elements, `n`**.
 	$$
-		x_1 + x_2 + x_3 + ... + x_n = \sum_{i=1}^{n} x_i = n \cdot \bar{x}
+		x_1 + x_2 + x_3 + ... + x_n = \sum_{i=1}^{n} x_i = n \times \bar{x}
 	$$
 2. **Adding** a constant value `k` to **all** data points changes the mean by the same constant value.
-
 	$$
 		\sum_{i=1}^{n} (x_i + k) = \bar{x}_{old} + k
 	$$
 
 3. **Multiplying all values** by a constant value `g` would result by the old mean also being multiplied by `g`.
-
 	$$
-		\sum_{i=1}^{n} (x_i \cdot{g}) = \bar{x} \cdot g
+		\sum_{i=1}^{n} (x_i \cdot{g}) = \bar{x} \times g
 	$$
 
 **What the mean can and cannot tell us**
@@ -278,14 +275,14 @@ $$
 
 5. Subgroup means are unreliable as it assumes that the groups have the same number of individuals/elements.
 
-### Weighted Average / Weighted Mean
+#### Weighted Average / Weighted Mean
 - method of computing an average where some data points contribute more than others
 	- proportion serves as good metric when comparing groups of unequal sizes
 	- proportion is nothing but a special case of the mean
 
-- formula for `wt_mean`:
+Formula for `wt_mean`:
 	$$
-		\bar{x}_{weighted} = \frac{\sum w_n \cdot x_n}{\sum w_n}
+		\bar{x}_{weighted} = \frac{\sum w_n \times x_n}{\sum w_n}
 	$$
 
 

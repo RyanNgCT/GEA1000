@@ -1,9 +1,7 @@
-# Week 7 Lecture Notes
-
 ## A. Background and Motivation
 The Plan, Data and Analysis Phases of PPDAC involved the use of specialized tools and techniques to inter-relate these three phases.
 
-> *def:* Statistical Inference is the process of drawing conclusions from sample data.
+> *def:* **Statistical Inference** is the process of drawing conclusions from sample data.
 ### Key Learning Outcomes
 - concepts of basic probability theory (condition probability), independent and mutually exclusive events, discrete and continuous random variables
 - prosecutor's fallacy, base rate fallacy and conjunction fallacy
@@ -44,13 +42,12 @@ $$
 
 $$
 \begin{aligned}
-Event_n \subset \mathcal{E} 
+Event_n & \subset \mathcal{E} 
 \newline \newline
-\{2, 4, 5\} \subset Set(Dice \: rolls)
+\{2, 4, 5\} & \subset Set(Dice \: rolls)
 \end{aligned}
 $$
 ### Probability of an Event, `P(E)`
-
 The probability of Event $E$, denoted $P(E)$ takes on a numerical value between *zero and one* inclusive $\implies \: 0 \le P(E) \le 1$ .
 - note that $P(E)$ should be the **long-run proportion** of observing $E$ with many repetitions (i.e. $N$, which is also called the sample space).
 - $P(E)$ is estimated using the following formula
@@ -79,22 +76,20 @@ We will stick to assumption that the sample space contains only a finite number 
 
 ### Uniform Probability
 > *def:* **Uniform probability** is the way of assigning probabilities to outcomes such that **equal probability** is assigned to *every outcome* in the *finite sample space*. Thus, if the sample space contains a total of $N$ different outcomes, then the probability assigned to each outcome is $\frac{1}{N}$.
-
 - probability of selected any particular unit in this case if $\frac{1}{N}$
- - the sampling frame is exactly the sample space of the uniform probability experiment
+ - the sampling frame is **exactly the sample space** of the uniform probability experiment
 
 ---
 ## C. Prosecutor's Fallacy
 - expert witness in dual-murder case (of children) commented that the chance of two children from an affluent family dying from Sudden Infant Death Syndrome is 1 in 73 million.
 	- $\implies$ later on the Royal Statistics Society decided to issue a public statement of how this probability calculated was misrepresented
 	- expert witness assumed that first child's death and second child's death are independent of each other
-		- used the formula $P(First \: infant \: death | Clark \: innocent) \times P(Second \:infant \:death | Clark \: innocent)$ when they might in fact be related
+		- used the formula $P(First \: infant \: death \: | \: Clark \: innocent) \times P(Second \:infant \:death \: | \: Clark \: innocent)$ when they might in fact be related
 
-- occurs when we assume that $P(A \: | B)  = P(B \: | A)$ ❌
-	- "all cows have four legs" does not imply "all four legged animals are cows"
+- occurs when we assume that $P(A \: | B)  = P(B \: | A)$ ❌ $\implies$ "all cows have four legs" does not imply "all four legged animals are cows"
 
 ### Conditional Probability
-> *def:* Conditional probability is the probability of one even given another event, where both events are of the same sample space
+> *def:* **Conditional Probability** is the probability of one even given another event, where both events are of the same sample space
 
 ![conditional-prob](../assets/conditional-prob.png)
 
@@ -116,7 +111,7 @@ P(A \: | B) = \frac{P(A \cap B)}{P(B)} = rate(A \: | B)
 $$
 
 ### Independent Events
-> *def:* The probability of an Event A is the same as the probability of A given B. So the fact that B has not occurred does not affect the probability of A occurring.
+> *def:* The probability of an Event A *is the same* as the probability of A given B. So the fact that B has not occurred does not affect the probability of A occurring.
 $$
 P(A) = P(A \: | B)
 $$
@@ -125,7 +120,7 @@ Conditional probability with A and B being independent from each other:
 $$
 P(A \: | B) = \frac{P(A \cap B)}{P(B)}, P(A) = \frac{P(A \cap B)}{P(B)} \implies P(A) \times P(B) = P(A \cap B)
 $$
-Recall: We say that two variables are not related if $rate(A) = rate(A \: | B)$.
+Recall: We say that two variables are **not related** if $rate(A) = rate(A \: | B)$.
 - Thus, A and B are independent events whenever they are **not associated** with one another.
 
 #### Conditional Independence
@@ -133,11 +128,11 @@ Recall: We say that two variables are not related if $rate(A) = rate(A \: | B)$.
 $$
 P(A \cap B \: | \:C) = P(A \: | \: C) \times P(B \: | \: C)
 $$
-- using the "distributive" technique
+- using the "distributive" technique for expansion
 
 ---
 ## D. Conjunction Fallacy
-> *def:* The *law of total probability* states that if $E$, $F$ and $G$ are events from the same sample space $S$ such that
+> *def:* The ***law of total probability*** states that if $E$, $F$ and $G$ are events from the same sample space $S$ such that:
 > 	1. $E$ and $F$ are mutually exclusive (i.e. $E \cap F = \emptyset$)
 > 	2. $E \cup F = S$
 > 	Then, $P(G) = P(G | E) \times P(E) + P(G | F) \times P(F)$
@@ -145,7 +140,7 @@ $$
 
 > *def:* **Conjunction fallacy** occurs when one believes that the chances of two things happening together is higher than the chance of one of the two things happening alone.
 
-i.e. Assuming 
+i.e. is incorrectly assuming that: 
 $$
 P(A \cap B) \gt P(A) \: or \: P(B \cap A) \gt P(B)
 $$
@@ -159,8 +154,7 @@ $$
 ## E. Base Rate Fallacy
 > *def:* The **base rate fallacy** is a decision-making error in which the information about the rate of the occurrence of some trait in a population, called the base rate information, is ignored or not given appropriate weight.
 
-
-Example case study: Accuracy of ART Test Kits
+**Example case study: Accuracy of ART Test Kits**
 1. Scenario 1: Infected Individual's ART result is positive
 	1. True Positive Rate / **Sensitivity of the Test**: $P(Tests\: Positive | Individual\: is\: infected)$
 	
@@ -174,7 +168,7 @@ Example case study: Accuracy of ART Test Kits
 
 Results from scenario 1 and 2 are not helpful for the average layman (don't actually have the means to afford testing options which 100% confirm diagnosis), thus more useful to find out:
 $$
-P(Individual\: is\: infected \: | \: Tests\: Positive)
+P(\text{Individual is infected }|  \text{ Tests Positive})
 $$
 
 Apart from the **sensitivity (TP rate)** and **specificity (TN rate)**, it is also important to consider the **base rate of infection** of the population.
@@ -187,7 +181,7 @@ Apart from the **sensitivity (TP rate)** and **specificity (TN rate)**, it is al
 - The mode of a discrete random variable is the value of x that attains the highest y-value.
 
 #### Discrete Random variables
-Example of probabilities involved when rolling an **unequal six-sided die** might be as follows:
+Example of probabilities involved when rolling an **unequal six-sided / biased die** *might* be as follows:
 $$
 \begin{aligned}
 P(Y = 1) = \frac{1}{3}
@@ -209,11 +203,11 @@ $$
 \therefore \: \sum_{i = 1}^{6} P(Y = i) = 1
 $$
 
-Example 2 (Tutorial 4 Qn 1)
+**Example 2 (Tutorial 4 Qn 1)**
 ![die-probability](../assets/die-probability.png)
 #### Continuous Random variables
 - continuous random is defined over an interval of values and is represented by the area under the **density curve**
-
+- use integration to obtain (not in scope of GEA)
 $$
 P(a \le Y \le b) = \int_a^b f(x) dx \:, \: on \:  [a, b]
 $$

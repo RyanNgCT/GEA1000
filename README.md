@@ -1,5 +1,4 @@
-Week 11 - Group Project presentation
-Week 13 - Optional Class
+# GEA1000 Notes
 
 ## About the course
 - basic arithmetic
@@ -8,11 +7,11 @@ Week 13 - Optional Class
 - basic logarithms (tutorial 3)
 
 ## Data handling software
-- in-class quiz at the end of each tutorial (low %)
+- in-class quiz at the end of each tutorial (low `%`)
 - inside project (more info Wk 4 or 5)
 - NOT applicable for final exam
 
-## Assessment
+## Assessments
 - Class part $\implies$ group-based
 - Exam format mirrors the quiz formats  (use some particular software for this Sem exam)
 

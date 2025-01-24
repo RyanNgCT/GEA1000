@@ -18,18 +18,19 @@ Should ask oneself of the type on visualizations to do.
 ## B. Simpson's Paradox
 > *def:* The phenomenon when a trend appears in the **majority** of several groups of data, but disappears or reverses when the groups are combined
 
-- the two variables in the study of question are no longer associated (i.e. $rate(A|B) = rate(A | NB)$)
+- the two variables in the study of question are no longer associated (i.e. $rate\left(A|B\right) = rate\left(A | NB\right)$)
 - when you aggregate all the results, the trend says one thing; whereas when we subdivide the results into sub-groups, the trend says something very different.
 
 When exploring a particular (usually dependent) variable, we use *(a) simple plots* and *(b) summary stats* to discover interesting trends.
 ### 1. Identification
 - not considering other (categorical) variables that may affect conclusion
-	- for **large stones**, `rate(Success | X) > rate(Success | Y)` (i.e. `rate(A | B) > rate(A | NB)` ) $\implies$ for large kidney stones, treatment X is much better
-	- in every single age bucket, being in Italy means a higher chance of survival from COVID than in China, yet overall it is the opposite (i.e. being in China means one has a higher chance of survival than Italy) -- because there are much more older people who have gotten COVID as compared with China
+	- Examples
+		- for **large stones**, `rate(Success | X) > rate(Success | Y)` (i.e. `rate(A | B) > rate(A | NB)` ) $\implies \: \therefore$ for large kidney stones, treatment X is much better
+		- in every single age bucket, being in Italy means a higher chance of survival from COVID than in China, yet overall it is the opposite (i.e. being in China means one has a higher chance of survival than Italy) -- because there are much more older people who have gotten COVID as compared with China
 
- use of a sliced bar graph to compare three categorical variables.
+ Use of a sliced bar graph to compare three categorical variables and determine association `rate(A | B) = rate(A | NB)`???
 
-causes of the paradox
+**Causes of the paradox**
 - the sample size for one particular group is very different as compared to another.
 
 Able to conclude that we should give treatment X in all cases since we have found out that it has a positive association with success for both big and small stones (regardless of stone size).
@@ -42,7 +43,6 @@ Able to conclude that we should give treatment X in all cases since we have foun
 	![analyzing-simpsons-paradox-slicing](../assets/analyzing-simpsons-paradox-slicing.png)
 
 - after identifying Simpson's paradox $\implies$ this implies that there is definitely a confounding variable associated with the other two variables under investigation.
-
 ---
 ## C. Confounders
 > *def:* A confounding variable (or **confounder**) is a variable that is **associated to both the two other variables** that we are investigating.
@@ -53,16 +53,13 @@ Able to conclude that we should give treatment X in all cases since we have foun
 	- researchers might not be sure if they can determine if a variable is a confounder or not
 	- by collecting more info or other variables, the researchers can associate variables and determine if there might be presence of confounders
 
-
-- use the symmetry rule or graphical comparison to show association between confounder and dep/indep variable
-
+- use the symmetry rule or graphical comparison to show association between confounder and dependent/independent variable
 ### Controlling confounders
 1. Use of **slicing** to control confounders
 2. Collection of *more* background data / variables that might be confounders (not entirely feasible and costly)
 	1. Require researchers to collect info beyond research questions
 3. **Randomized assignment** (proportional allocation based on other variables)
 	1. might be difficult and unethical to force patients on undergoing specific treatment type $\implies$ observational study
-
 #### Cons of Non-randomized studies
 1. Unsure if all confounders are controlled
 2. Limited conclusion

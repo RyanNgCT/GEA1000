@@ -46,7 +46,7 @@
 using PPDAC chart to answer new question discovered
 ![PPDAC-reiteration](../assets/PPDAC-reiteration.png)
 
-> *def:* A two-way contingency table is a cross-classification of observations by the levels of two discrete variables
+- A two-way contingency table is a cross-classification of observations by the levels of two discrete variables
 
 - can make use of data to determine if treatment X or Y is better in giving a Successful outcome?
 	- make use of a `2x2` data/contingency table (not to be confused with a *two-way relative frequency table*)
@@ -162,7 +162,7 @@ The above imply that the variables are either positively or negatively associate
 - As `rate(B)`  approaches 100%, `rate(A)` gets closer and closer to `rate (A | B)` as compared to `rate(A | NB)` (should still fulfil the above criteria)
 
 > $rate(B) = 50\% \implies rate(A) = \frac{\left[ rate(A\:|\:B) + rate(A\:|\:NB) \right]}{2}$
-- if the `rate(B)` is exactly 50%, then the `rate(A)` is exactly halfway between the boundaries of `rate(A | B)` and `rate(A | NB)`.
+- if the `rate(B)` is **exactly 50%**, then the `rate(A)` is exactly halfway between the boundaries of `rate(A | B)` and `rate(A | NB)`.
 
 > $rate(A | B) = rate(A | NB) \implies rate(A) = rate(A | B) = rate(A | NB)$
 - If there is equality between A given B and A given not B, then the overall rate of A would also be the same value

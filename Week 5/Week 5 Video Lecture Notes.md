@@ -2,8 +2,8 @@
 - introduces EDA techniques and concepts for analyzing and interpreting numerical data
 
 **What is Numerical Data?**
-- It is data predominantly analyzed using regression analysis (regression is a major part of statistics)
-- the chapter covers
+- It is data predominantly analysed using regression analysis (regression is a major part of statistics)
+- the chapter covers:
 	- univariate data analysis
 	- bivariate data analysis - correlation of variables and related concepts
 
@@ -16,9 +16,9 @@
 ---
 ## B. Motivation
 - attempt to solve issue problem using real housing data collected in Singapore
-
 - Dataset (`housing-raw.csv`): Sales of HDB Resale flat information between Jan 2017 to Jun 2021
 
+#### Using the PPDAC
 **Problem: What factors may affect the popularity and pricing of resale flats sold in Singapore?**
 
 **Plan: Narrow down the factors in the Problem state (by shortlisting)**
@@ -58,7 +58,7 @@ can present / relate the variables `age` with its frequency (which can be called
 	- difficult to get an overall picture of the distribution
 - may have to iterate over different bin sizes and see which is the most appropriate (based on ability to extract useful insights)
 
-- don't confuse histograms with bar plots
+- **don't confuse histograms with bar plots**
 	- one shows distribution across numerical bins/ranges while the other compares categories of the same variable
 	- one has breakages or gaps while the other doesn't
 	- numerical order doesn't matter for matter for bar plots but matters for histograms
@@ -74,10 +74,8 @@ can present / relate the variables `age` with its frequency (which can be called
 When graphing a distribution of a quantitative variable we look out for the:
 - **Overall pattern** (Shape, Centre and Spread)
 - **Deviations/Exceptions from the general pattern** (Outliers)
-
 #### 1. Shape
 We look out for the shape of the distributions via its *peaks and skewness* (a.k.a. descriptors)
-
 #### Modality
 Good to imagine a smooth curve outlining the distribution
 
@@ -97,8 +95,8 @@ Good to imagine a smooth curve outlining the distribution
 - Right-skewed: long right tail, peak to the left
 
 #### 2. Measures of Central Tendency (or centre)
-- use mean, median and mode ad the measures of skewness to describe a distribution more precisely
-- usual occurrence of mean median and mode below (usually $\underline{but \: not\: always}$)
+- use mean, median and mode are the measures of skewness to describe a distribution more precisely
+- usual occurrence of mean, median and mode in the different types of distributions listed below (usually $\underline{but \: not\: always}$ true)
 
 ![central-tendency-skewness](../assets/mean-median-mode-skewness.png)
 #### 3. Spread
@@ -142,7 +140,7 @@ Good to imagine a smooth curve outlining the distribution
 	- computation of quartiles also differ in Excel (use a different computational algorithm)
 
 #### Outlier definition in terms of statistics used
-outlier is valid if it meets one of the two conditions:
+An Outlier is valid if it meets one of the two conditions:
 $outlier  \gt Q3 + (1.5 \times IQR) \lor outlier \lt Q1 - (1.5 \times IQR)$
 
 #### Steps in constructing box plots
@@ -210,8 +208,7 @@ when describing these plots **overall pattern** / the "general trend", we use a 
 	- description of ***how closely*** data follows the form (as described above)
 	- do points deviate from the best fit curve or line?
 
-
 *i.e. Positive Linear relationship or Negative Non-linear relationship*
 
-and for deviations, we look at **outliers**
+and for deviations, we look at **outliers**.
 ![describing_univariate_vs_bivariate](../assets/describing_univariate_vs_bivariate.png)
